@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="th.go.rploei.riskandroid1.WriteRiskActivity">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearWR1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <TextView
+                android:id="@+id/textView0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07"
+                android:text="ข้อมูลความเสี่ยง"
+                android:textAlignment="center"
+                android:textColor="?attr/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewWr6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07"
+                android:text="TextView"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/textViewWR1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07"
+                android:text="TextView"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewWR2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="วันที่เกิดเหตุ"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/buttonWr1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.66"
+                    android:background="@android:color/holo_blue_light"
+                    android:text="เลือกวันที่" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewWR3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="เวลาที่เกิดเหตุ"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/buttonWr2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.76"
+                    android:background="@android:color/holo_blue_light"
+                    android:text="เวลาที่เกิด" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewWR4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="สถานที่เกิดเหตุ"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/buttonWr3"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.81"
+                    android:background="@android:color/holo_blue_light"
+                    android:text="ที่เกิดเหตุ" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextwr4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07"
+                android:ems="10"
+                android:hint="HN"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextwr5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07"
+                android:ems="10"
+                android:hint="AN"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextwr6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07"
+                android:ems="10"
+                android:hint="ชื่อบุคลากรที่ประสบเหตุการณ์"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewWR5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="หน่วยงานที่เกี่ยวข้อง"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/buttonWR4"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.21"
+                    android:background="@android:color/holo_blue_light"
+                    android:text="หน่วยงานที่เกี่ยวข้อง" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonWr5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07"
+                android:background="@android:color/holo_green_dark"
+                android:text="ต่อไป"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
